@@ -1,0 +1,133 @@
+* {
+    margin: 0%;
+    padding: 0;
+    user-select: none;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    margin-top: 20px;
+    border-radius: 20px;
+    background: #171a1c;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #000;
+}
+
+body {
+    overflow-y: overlay;
+    overflow-x: hidden;
+    width: 100vw;
+    background-color: #39595B;
+}
+
+header {
+    background-color: #202C2F;
+    opacity: 95%;
+    position: relative;
+    width: 100vw;
+    height: 75px;
+    left: 0;
+    z-index: 2;
+    transition: opacity 1s;
+}
+
+header:hover {
+    opacity: 100%;
+    transition: opacity 0.4s;
+}
+
+header img {
+    margin-top: 7.5px;
+    height: 60px;
+    width: auto;
+    margin-left: 200px;
+    cursor: pointer;
+}
+
+.content {
+    background-color: #202C2F;
+    position: relative;
+    display: block;
+    left: 50%;
+    width: 700px;
+    transform: translateX(-50%);
+    top: 20%;
+    border-radius: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    grid-template-rows: repeat(5, 1fr);
+    padding: 50px 40px;
+    padding-top: 0;
+    box-shadow: 2px 2px 15px 18px rgba(20, 29, 38, 20%);
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+.content h1 {
+    width: 100%;
+    text-align: center;
+    margin: 35px 0;
+    color: #bbb;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.content div:nth-child(even) {
+    margin-left: auto;
+}
+
+.content>div {
+    width: 50%;
+}
+
+.content>div>span {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 80%;
+    margin: auto;
+    cursor: pointer;
+}
+
+.content>div>span:hover>p {
+    color: #bb9457;
+}
+
+.content>div:nth-child(2) {
+    margin-bottom: 50px;
+}
+
+.content>div>span>p {
+    height: 50px;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'Urbanist', sans-serif;
+    color: white;
+}
+
+.content>div>span>p:nth-child(even) {
+    text-align: right;
+}
+
+.content>div>span:nth-child(1)>p {
+    color: #9C6644;
+    height: 70px;
+    font-size: 35px;
+    font-weight: bolder;
+    cursor: default;
+    font-family: 'Oswald', sans-serif;
+}
+
+.content>div>span:nth-child(1)>p:nth-child(2) {
+    color: #B08968;
+}
